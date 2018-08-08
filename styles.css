@@ -1,0 +1,42 @@
+body {
+	text-align: center;
+	font-family: 'Georgia', 'Helvetica', sans-serif;
+}
+
+nav a:link {
+	color: #DD30C6;
+}
+
+nav a:visited {
+	color: #237AD1;
+}
+
+nav {
+	text-align: left;
+	color: #DD30C6;
+}
+
+.list {
+	text-align: left;
+}
+
+.heading {
+	color: #5528DC;
+}
+
+h1 {
+	font-family: 'Georgia', 'Helvetica', sans-serif;
+}
+
+thead, th {
+	border: 3px solid #27B9BE;
+	font-family: 'Times', sans-serif;
+	font-size: 24px;
+}
+
+table, td {
+	border: 3px solid #27B9BE;
+	font-family: 'Times', sans-serif;
+	font-size: 12px;
+}
+

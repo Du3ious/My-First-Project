@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>HTML Practice Sheet</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+	
+<body>
+	
+    <div class="heading">
+        <h1>SEAN'S HTML PRACTICE SHEET</h1>
+    </div>
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Back to Title Page</a></li><br>
+			<li><a href="#html intro" target="_self">HTML Anatomy</a></li>
+			<li><a href="#examples" target="_self">Element and Tag Examples</a></li>
+			<li><a href="#headings" target="_self">Headings</a></li>
+			<li><a href="#lists" target="_self">Lists</a></li>
+			<li><a href="#attributes" target="_self">Attributes</a></li>
+			<li><a href="#images" target="_self">Images</a></li>
+			<li><a href="#videos" target="_self">Videos</a></li>
+			<li><a href="#hyperlinks" target="_self">Hyperlinks</a></li>
+			<li><a href="#htmltables" target="_self">Tables</a></li>
+		</ul>
+	</nav>
+    
+    <div id="html intro">
+        <h2>HTML INTRODUCTION</h2>
+        <p>
+            HTML is composed of elements. Elements are composed of an opening and closing tag, with the content placed inbetween. Closing tags always have a foward slash (/) in the them.<br><br>
+            Elements have a heirachy, or family lineage, which is used to group sections of code. The highest parent element is HTML. <strong>head</strong> and <strong>body</strong> are the child elemnts of HTML, and are siblings. All other elements are children of either head or body.<br><br>
+            When writing a HTML doc, the first line of code should be the <em>document type declaration</em>, which tells the browser that the code is in HTML. The <em>document type declaration</em> looks like <strong>&lt;!DOCTYPE html&gt;</strong><br><br>
+            After the <em>document type declaration</em>, to start the structure of the code to read, HTML tags need to be added. This will instruct the browser to generate all code within the tags as HTML. The HTML tag is <strong>&lt;html&gt;</strong><br><br>
+            A HTML doc consists of the <strong>head</strong>, which contains the metadata about the webpage, and the <strong>body</strong>, which contains the code which will be displayed on the page itself.
+        </p>
+    </div>
+    
+    <div class="examples">
+        <h2>ELEMENT AND TAG EXAMPLES</h2>
+		<p>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Click here for the Mozilla list of Elements</a>
+		</p>
+        <ul class="list">
+            <li>head - contains introductory elements</li><br>
+            <li>body - the element that contains most, if not all of the page you are creating</li><br>
+            <li>div - used to create a 'division' in your code</li><br>
+            <li>h1-h6 - headings and sub-headings</li><br>
+            <li>p - normal text, or 'paragraph'</li><br>
+            <li>br - inserts a line break. <strong>br is unique as it only uses an opening tag</strong></li><br>
+            <li>span - used to style text that is inline with other text. This is very useful when using CSS to style particular words in a line, and can include several different styling options in the one span option</li><br>
+            <li>title - used in the <strong>head</strong>, gives the page a title which is displayed in the browser tab.</li><br>
+			<li>&lt;!-- and --&gt; - anything between these two tags will be ignored bt the browser, and is used to leave notes withing the code or to write test code</li><br>
+            <li>em - emphasises text, using the browsers built in settings (<em>usually Italics</em>), but can be altered with CSS</li><br>
+            <li>strong - highlights text, using the browsers built in settings (<em>usually Bold</em>), but can be altered with CSS</li><br>
+            <li>ul and ol - used to create lists (Refer to the <a href="#lists" target="_self">LISTS</a> chapter)</li><br>
+            <li>img - used to insert images (Refer to the <a href="#images" target="_self">IMAGES</a> chapter)</li><br>
+            <li>video - used to insert videos (refer to the <a href="#videos" target="_self">VIDEOS</a> chapter)</li><br>
+			<li>a - 'anchor' is used to hyperlink to other pages or sections of the same page. (Refer to the <a href="#hyperlinks" target="_self">HYPERLINKS</a> chapter)</li><br>
+			<li>table - creates a table (Refer to the <a href="#tables" target="_self">TABLES</a> chapter)</li><br>
+			<li>tr, td and th - used to create different aspects of a table (Refer to the <a href="#tables" target="_self">TABLES</a> chapter) </li><br>
+			<li>link - used to link a CSS style sheet to a HTML page (Refer to the <a href="CSS%20Reference%20Sheet.html#CSS intro">CSS Intro's chapter</a></li>
+			<li>nav - used to create navigation link sections of code</li>
+        </ul>    
+    </div>
+    
+    <div id="headings">
+        <h2>HEADINGS</h2>
+        <p>
+            There are 6 heading elements in HTML, they are:
+        </p>
+          <h1>h1</h1>
+          <h2>h2</h2>
+          <h3>h3</h3>
+          <h4>h4</h4>
+          <h5>h5</h5>
+          <h6>h6</h6>
+    </div>
+    
+    <div id="lists">
+        <h2>LISTS</h2>
+        <p>
+            There are two sorts of lists in HTML: Unordered, and Ordered lists.<br><br>
+            To create an unordered list in HTML, use the <strong>ul</strong> element to create the list, and <strong>li</strong> for each item for the list to contain as a dotpoint<br><br>
+            To create an ordered list, use the <strong>ol</strong> element to create the list, and <strong>li</strong> for each item for the list to contain as a numerically ordered list.<br><br>
+			When creating a list within other text, close the text tag first (eg &lt;p&gt;) and open a new text code when the list is finished.
+        </p>
+    </div>
+    
+    <div id="attributes">
+        <h2>ATTRIBUTES</h2>
+        <p>
+            Attributes are added to an opening tag and are used to distinguish tags. They can be used for a variety of things, from providing information, through to changing the style of the content. Most attributes require a defined value (="*"), however attributes which rely on a true/false indication (boolean values) do not.
+        </p>
+        <h3>ATTRIBUTE EXAMPLES</h3>
+		<ul class="list">
+			<li>id - one use of id is to give an idenitifier to an element, and is useful if you need to distinguish between frequently used elements such as 'div'. It can be used on almost any element to give it an identifier.</li><br>
+			<li>class - similar to id, however where id is used to distinguish individual specific elements, class is used to identify elements that are all alike. <strong>Note = if both 'class' and 'id' are used, CSS will use the 'id'</strong> (Refer to <a href="https://stackoverflow.com/questions/544010/difference-between-div-id-and-div-class?noredirect=1&lq=1" target="_blank">this explanation</a> if stuck)</li><br>
+			<li>src - links to a source material such as an image or a video</li><br>
+			<li>controls - when added to a video tag, allows the use of video controls. (Refer to the <a href="#videos" target="_self">VIDEOS</a> chapter)</li><br>
+			<li>href - gives a hyperlink a destination. (Refer to the <a href="#hyperlinks" target="_self">HYPERLINKS</a> chapter)</li><br>
+			<li>target - tells a hyperlink how to open (new tab, new window, same window, etc. (Refer to <a href="#hyperlinks" target="_self">HYPERLINKS</a> chapter)</li><br>
+			<li>scope - indicates column or row for a table heading (Refer to the <a href="#tables" target="_self">TABLES</a> chapter)</li>
+        </ul>
+    </div>
+    
+    <div id="images">
+        <h2>IMAGES</h2>
+        <p>
+            To add an image, use the <strong>img</strong> tag. The img tag is self closing and <strong>does not require a closing tag</strong>.<br><br>
+            The <strong>img</strong> tag requires a source, which is determined by <strong>src="*"</strong><br><br>
+            All images should have alternative text, or image descripter, written within the code. This is useful for SEO, the visually impaired, and leaves a description if the image fails to load. This uses the <strong>alt"*"</strong> tag.
+        </p>
+        <img src="Images/Happy%20Birthday.jpg" alt="Take it Damo, take it all">    
+    </div>
+    
+    <div id="videos">
+        <h2>VIDEOS</h2>
+        <p>
+            Videos work similarily to images, however it does use a closing tag. To add a video, use the <strong>video</strong> tag. Include the source, width and height, and video controls within the opening tag. Any text written between the opening and closing tags will be displayed if the video fails to load properly.<br><br>
+            To add the source, use the <strong>src="*"</strong> tag, the width and height are set with the <strong>width="*"</strong> and <strong>height="*"</strong> tags, and the allowance of video controls are set with the <strong>controls</strong> tag. The controls tag is a kind of boolean value (true/false), and doesn't need a value (eg. ="*").
+        </p>
+        <video src="Videos/BBC.Cat.Watch.2014.The.New.Horizon.Experiment.1of3.A.Cat.s.Eye.View.PDTV.x264.AAC.MVGroup.org.mp4" width="320" height="240" controls>No Video For You!!</video>
+    </div>
+    
+	<div id="hyperlinks">
+		<h2>HYPERLINKS</h2>
+		<p>
+			Hyperlinks use the <strong>&lt;a&gt;</strong> tag, and uses the <strong>href</strong> attribute to find the URL (Unifrom Resource Locater). The opening tag contains the href and the <strong>target</strong> attribute. <strong>target</strong> tells the browser how to open the link.<br><br>
+			The options for target are:
+		</p>
+		<ul class="list">
+			<li>_blank - opens the link in a new tab</li><br>
+			<li>_self - opens the link in the current window</li><br>
+			<li>_parent - opens the link to the parent frame (defunct old html code that I don't get yet)</li><br>
+			<li>_top - opens the link to the parent frame (defunct old html code that I don't get yet)</li>
+		</ul>
+		<p>
+			The text inbetween the opening and closing tag is what the link will be displayed as.<br><br>
+			For example:<br><br> 
+			<a href="https://ruminationsofamiddleclasswhitemale.wordpress.com/" target="_blank">Here is my Blog Biatches</a> - is using the _blank target attribute<br><br>
+			<a href="https://ruminationsofamiddleclasswhitemale.wordpress.com/" target="_self">Here is my Blog Biatches</a> - is using the _self target attribute<br><br>
+			<a href="https://ruminationsofamiddleclasswhitemale.wordpress.com/" target="_parent">Here is my Blog Biatches</a> - is using the _parent target attribute<br><br>
+			<a href="https://ruminationsofamiddleclasswhitemale.wordpress.com/" target="_top">Here is my Blog Biatches</a> - is using the _top target attribute<br><br>
+			Hyperlinks also link to pages within the <em>root directory</em> (main folder) by using "./*" This is known as a <em>local file</em> link<br><br>
+			<a href="./test%20page.html" target="_blank">Here is a test page I made</a><br><br>
+			You can also use Hyperlinks to jump around the same page by using the id attributes, and linking them using "#*"<br><br>
+			<a href="#heading" target="_self">Jump Back to the Top!</a><br><br>
+			You can transform any elements of HTML in a hyperlink by simply wrapping it in hyperlink tags.<br><br>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="Images/bloody-gir.jpg" alt="Bloody Gir" width="320" height="240"></a>
+		</p>
+	</div>
+	
+	<div id="htmltables">
+		<h2>TABLES</h2>
+		<p>
+			Tables are created using the <strong>&lt;table&gt;</strong> tag, and can be used to store and retrieve data. Once a table has been created, you must create the individual rows, and then fill each row with cells of data.<br><br>
+			Rows are created with the <strong>&lt;tr&gt;</strong> tag, with each opening and closing <strong>&lt;/tr&gt;</strong> creating one row.<br><br>
+			Within each row, cells can be added using the <strong>&lt;td&gt;</strong> tag. Any text input between the <strong>&lt;td&gt;</strong> tags is displayed in the cell.<br><br>
+			By repeating the process of creating rows and cells, a table is formed.<br><br>
+			To create titles for each row and column, the <strong>&lt;th&gt;</strong> tag is used, along with the attribute <strong>scope="col"</strong> or <strong>scope="row"</strong>. The scope indicates whether the title is for a row or a column.<br><br>
+			If any cell data needs to cover more than one cell, the attributes <strong>colspan="*"</strong> or <strong>rowspan="*"</strong> are used.<br><br>
+			If a table is growing large, the data can be seperated (eg. the data from the headings) using the <strong>&lt;tbody&gt;</strong>, <strong>&lt;thead&gt;</strong>, and <strong>&lt;tfoot&gt;</strong> tags.
+		</p><br>
+		
+		<table id="candyfromababy">
+			<thead>
+				<tr> <!-- Title Row -->
+					<th scope="col">BABY</th>
+					<th scope="col">AGE</th>
+					<th scope="col">CANDY TAKEN</th>
+					<th scope="col">GRIP STRENGTH</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr> <!-- Row 1 -->
+					<td>Control</td>
+					<td colspan="2">N/A</td>
+					<td>0.08 Pounds</td>
+				</tr>
+				<tr> <!-- Row 2 -->
+					<td>Cole</td>
+					<td>6 Months</td>
+					<td>Yes</td>
+					<td>3.16 Pounds</td>
+				</tr>
+				<tr> <!-- Row 3 -->
+					<td>Ruby</td>
+					<td>10 Months</td>
+					<td>No</td>
+					<td>N/A</td>
+				</tr>
+				<tr> <!-- Row 4 -->
+					<td>Anika</td>
+					<td>14 Months</td>
+					<td>Yes</td>
+					<td>1.08 Pounds</td>
+				</tr>
+				<tr> <!-- Row 5 -->
+					<td>Franky</td>
+					<td>18 Months</td>
+					<td>Yes</td>
+					<td>1.79 Pounds</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr> <!-- Summary Row -->
+					<th colspan="4">Average Grip Strength = 2.01 Pounds</th>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	
+</body>
+	
+</html>

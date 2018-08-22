@@ -14,8 +14,10 @@
 	
 	<nav>
 		<ul>
-			<li><a href="index.html">Back to Title Page</a></li><br>
-			<li><a href="#html intro" target="_self">HTML Anatomy</a></li>
+			<li><a href="index.html">Back to Title Page</a></li>
+			<!-- I don't think you need to add target self these days. I only use target to open in a new tab -->
+			<li><a href="#html_intro">HTML Anatomy</a></li>
+			<!-- A space means something in mark up and js - use underscores instead -->
 			<li><a href="#examples" target="_self">Element and Tag Examples</a></li>
 			<li><a href="#headings" target="_self">Headings</a></li>
 			<li><a href="#lists" target="_self">Lists</a></li>
@@ -35,7 +37,8 @@
             When writing a HTML doc, the first line of code should be the <em>document type declaration</em>, which tells the browser that the code is in HTML. The <em>document type declaration</em> looks like <strong>&lt;!DOCTYPE html&gt;</strong><br><br>
             After the <em>document type declaration</em>, to start the structure of the code to read, HTML tags need to be added. This will instruct the browser to generate all code within the tags as HTML. The HTML tag is <strong>&lt;html&gt;</strong><br><br>
             A HTML doc consists of the <strong>head</strong>, which contains the metadata about the webpage, and the <strong>body</strong>, which contains the code which will be displayed on the page itself.
-        </p>
+		</p>
+		<!-- Instead of using <br> you could wrap the paragraphs in separate <p>. That's what the p is, a paragraph -->
     </div>
     
     <div class="examples">
@@ -44,7 +47,8 @@
 			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Click here for the Mozilla list of Elements</a>
 		</p>
         <ul class="list">
-            <li>head - contains introductory elements</li><br>
+			<li>head - contains introductory elements</li><br>
+			<!-- li is block level so you don't need an extra br. If you want more spacing, change the margin-bottom in the css -->
             <li>body - the element that contains most, if not all of the page you are creating</li><br>
             <li>div - used to create a 'division' in your code</li><br>
             <li>h1-h6 - headings and sub-headings</li><br>
@@ -113,7 +117,7 @@
             The <strong>img</strong> tag requires a source, which is determined by <strong>src="*"</strong><br><br>
             All images should have alternative text, or image descripter, written within the code. This is useful for SEO, the visually impaired, and leaves a description if the image fails to load. This uses the <strong>alt"*"</strong> tag.
         </p>
-        <img src="Images/Afro_Samurai.jpg" alt="Afro Samurai">    
+        <img src="images/afro_samurai.jpg" alt="Afro Samurai">    
     </div>
     
     <div id="videos">
@@ -149,7 +153,7 @@
 			You can also use Hyperlinks to jump around the same page by using the id attributes, and linking them using "#*"<br><br>
 			<a href="#heading" target="_self">Jump Back to the Top!</a><br><br>
 			You can transform any elements of HTML in a hyperlink by simply wrapping it in hyperlink tags.<br><br>
-			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="Images/bloody-gir.jpg" alt="Bloody Gir" width="320" height="240"></a>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="images/bloody-gir.jpg" alt="Bloody Gir" width="320" height="240"></a>
 		</p>
 	</div>
 	
